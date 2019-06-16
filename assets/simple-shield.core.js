@@ -44,7 +44,7 @@ let updateShield = function() {
 }
 
 let renderHtml = function() {
-    let code = `<a href="${cx.link}">\n<img src="${cx.shield} alt="${cx.label}">\n</a>`;
+    let code = `<a href="${cx.link}"><img src="${cx.shield} alt="${cx.label}"></a>`;
     return code.replace(/</gmi, '&lt;').replace(/>/gmi, '&gt;');
 }
 let renderBbc = function() {
@@ -78,6 +78,9 @@ $('#link').change(function() {
 })
 $('#color').change(function() {
     cx.color = this.value;
+})
+$('#useBrandLogo').click(function() {
+    cx.useLogo = $('#useBrandLogo').is(':checked');
 })
 $('#renderShield').click(function() {
     updateShield();
