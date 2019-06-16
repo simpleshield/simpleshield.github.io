@@ -70,9 +70,11 @@ $('#brandSelect').change(function() {
 $('#label').change(function() {
     cx.label = this.value;
 })
-
 $('#value').change(function() {
     cx.value = this.value;
+})
+$('#link').change(function() {
+    cx.link = this.value;
 })
 $('#color').change(function() {
     cx.color = this.value;
