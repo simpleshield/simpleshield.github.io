@@ -55,6 +55,7 @@ let renderMarkdown = function() {
 }
 
 $(document).ready(function() {
+    $('#codes').hide();
     brands.forEach(function(brand) {
         $('#brandSelect').append(`<option value="${brand.title}">${brand.title}</option>`)
     })
@@ -72,4 +73,14 @@ $('#label').change(function() {
 
 $('#value').change(function() {
     cx.value = this.value;
+})
+$('#color').change(function() {
+    cx.color = this.value;
+})
+$('#renderShield').click(function() {
+    updateShield();
+    $('#resultHtml').html(renderHtml());
+    $('#resultBBcode').html(renderBbc());
+    $('#resultMarkdown').html(renderMarkdown());
+    $('#codes').show();
 })
