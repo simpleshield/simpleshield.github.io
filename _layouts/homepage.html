@@ -15,12 +15,13 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-dark text-white">
+
+<body class="bg-dark text-white text-center">
     <br>
-    <img src="https://img.shields.io/badge/simple-shield-000000.svg" height="50px" width="auto">
-    <br>
+    <img src="https://img.shields.io/badge/simple-shield-000000.svg" height="100px" width="auto">
+    <br><br>
     <img id="updatedShield" src="">
-    <span id="updated">{{ site.last_updated }}</span>
+    <span id="updated" style="display: none">{{ site.last_updated }}</span>
     <script type="text/javascript">
     $('#updatedShield').attr('src', `https://img.shields.io/badge/last%20update-${encodeURIComponent($('#updated').html())}-blue.svg`);
     </script>
