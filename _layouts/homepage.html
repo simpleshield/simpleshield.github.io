@@ -27,19 +27,25 @@
     </script>
     <br><br>
     <div class="container">
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 input-group-sm">
             <div class="input-group-prepend">
                 <span class="input-group-text">Label</span>
             </div>
-            <input id="label" type="text" class="form-control" placeholder="Your Label">
+            <input id="label" type="text" class="form-control" placeholder="Twitter">
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 input-group-sm">
             <div class="input-group-prepend">
                 <span class="input-group-text">Value</span>
             </div>
-            <input id="value" type="text" class="form-control" placeholder="Your Value">
+            <input id="value" type="text" class="form-control" placeholder="YourNetworkNerd">
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 input-group-sm">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Color</span>
+            </div>
+            <input id="color" type="text" class="form-control" placeholder="000000">
+        </div>
+        <div class="input-group mb-3 input-group-sm">
             <div class="input-group-prepend">
                 <span class="input-group-text">Brand</span>
             </div>
@@ -47,33 +53,40 @@
                 <option disabled selected>Choose...</option>
             </select>
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 input-group-sm">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Link</span>
+            </div>
+            <input id="link" type="text" class="form-control" placeholder="https://twitter.com/YourNetworkNerd">
+        </div>
+        <div class="input-group mb-3 input-group-sm">
             <div class="input-group-prepend">
                 <div class="input-group-text">
-                    <input id="useLogo" type="checkbox">
+                    <input id="useBrandLogo" type="checkbox">
                 </div>
             </div>
             <input type="text" class="form-control" value="Use brand logo?" disabled>
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 input-group-sm">
             <div class="input-group-prepend">
                 <div class="input-group-text">
-                    <input id="useLogo" type="checkbox">
+                    <input id="useBrandColor" type="checkbox">
                 </div>
             </div>
             <input type="text" class="form-control" value="Use brand color on shield?" disabled>
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 input-group-sm">
             <div class="input-group-prepend">
                 <div class="input-group-text">
-                    <input id="useLogo" type="checkbox">
+                    <input id="useBrandColorOnLogo" type="checkbox">
                 </div>
             </div>
             <input type="text" class="form-control" value="Use brand color on logo?" disabled>
         </div>
         <button id="renderShield" class="btn btn-primary">Render!</button>
         <br><br>
-        <img id="result" src="" alt="" height="25px" width="auto">
+        <img id="result" src="" alt="" height="30px" width="auto">
+        <br><br>
         <div id="codes">
             <span>HTML Code</span>
             <br>
