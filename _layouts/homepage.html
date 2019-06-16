@@ -17,6 +17,12 @@
 </head>
 <body class="bg-dark text-white">
     <br>
-    <img class="https://img.shields.io/badge/simple-shield-000000.svg" height="50px" width="auto">
+    <img src="https://img.shields.io/badge/simple-shield-000000.svg" height="50px" width="auto">
+    <br>
+    <img id="updatedShield" src="">
+    <span id="updated">{{ site.last_updated }}</span>
+    <script type="text/javascript">
+    $('#updatedShield').attr('src', `https://img.shields.io/badge/last%20update-${encodeURIComponent($('#updated').html())}-blue.svg`);
+    </script>
     <br><br>
 </body>
