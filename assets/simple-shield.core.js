@@ -82,6 +82,12 @@ $('#color').change(function() {
 $('#useBrandLogo').click(function() {
     cx.useLogo = $('#useBrandLogo').is(':checked');
 })
+$('#useBrandColor').click(function() {
+    cx.useBrandColor = $('#useBrandColor').is(':checked');
+})
+$('#useBrandColorOnLogo').click(function() {
+    cx.useColorLogo = $('#useBrandColorOnLogo').is(':checked');
+})
 $('#renderShield').click(function() {
     updateShield();
     $('#resultHtml').html(renderHtml());
