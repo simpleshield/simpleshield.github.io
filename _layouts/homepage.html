@@ -26,17 +26,27 @@
     $('#updatedShield').attr('src', `https://img.shields.io/badge/last%20update-${encodeURIComponent($('#updated').html())}-blue.svg`);
     </script>
     <br><br>
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Label</span>
+    <div class="container">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Label</span>
+            </div>
+            <input id="label" type="text" class="form-control" placeholder="Your Label">
         </div>
-        <input id="label" type="text" class="form-control" placeholder="Your Label">
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Value</span>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Value</span>
+            </div>
+            <input id="value" type="text" class="form-control" placeholder="Your Value">
         </div>
-        <input id="value" type="text" class="form-control" placeholder="Your Value">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Brand</span>
+            </div>
+            <select id="brandSelect" class="custom-select">
+                <option disabled selected>Choose...</option>
+            </select>
+        </div>
     </div>
 </body>
 <script src="./assets/simple-shield.brands.js"></script>
