@@ -1,2 +1,7 @@
 .bg-dark { background-color: #343434 !important; }
 .bg-darker { background-color: #161616 !important; }
+
+.codeblock {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
