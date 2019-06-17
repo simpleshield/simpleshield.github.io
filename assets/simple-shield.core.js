@@ -44,8 +44,7 @@ let updateShield = function() {
 }
 
 let renderHtml = function() {
-    let code = `<a href="${cx.link}"><img src="${cx.shield} alt="${cx.label}"></a>`;
-    return code.replace(/</gmi, '&lt;').replace(/>/gmi, '&gt;');
+    return `&lt;a href="${cx.link}"&gt;<br>&lt;img src="${cx.shield}" alt="${cx.label}"&gt;<br>&lt;/a&gt;`;
 }
 let renderBbc = function() {
     return `[url=${cx.link}][img]${cx.shield}[/img][/url]`;
